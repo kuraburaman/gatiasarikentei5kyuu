@@ -1,10 +1,49 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif; /* メルヘンチックなフォントを使用 */
+    background-color: #FFEBE0; /* 明るいピンクの背景 */
+    text-align: center; /* テキストを中央揃えに */
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    border: 5px dashed #FFB6C1; /* ダッシュボーダーを追加 */
+    background-color: #FFF0F5; /* 明るい背景 */
+    border-radius: 20px; /* 角を丸く */
 }
 
-.image-upload {
-    margin-bottom: 20px;
+.congrats-title {
+    color: #FF69B4; /* 明るいピンクの色 */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.instructions {
+    color: #FF4500; /* 明るいオレンジの色 */
+    font-size: 16px;
+}
+
+.upload-label {
+    font-size: 18px;
+}
+
+.image-size {
+    font-size: 12px;
+    color: #8A2BE2; /* 明るい紫の色 */
+}
+
+.download-btn {
+    background-color: #FF69B4; /* 明るいピンクの色 */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; /* 角を丸く */
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.download-btn:hover {
+    background-color: #FF1493; /* より明るいピンクの色 */
 }
