@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ガチアサリ検定５級 認定資格発行サイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-upload">
+            <label for="file-input">
+                あなたの画像を選択して下さい！！:
+            </label>
+            <input type="file" id="file-input" onchange="previewImage(this)">
+        </div>
+        <canvas id="canvas" width="525" height="383"></canvas>
+        <button onclick="downloadImage()">受け取る</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
