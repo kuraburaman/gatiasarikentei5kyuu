@@ -9,14 +9,27 @@
 <body>
     <div class="container">
         <div class="image-upload">
-            <label for="file-input">
-                あなたの画像を選択して下さい！！:
+            <h1 class="congrats-title">ガチアサリ検定５級　合格おめでとうございます！！</h1>
+            <p class="instructions">以下であなたの画像をアップロードし、受け取るボタンから資格証を受け取って下さい！！</p>
+            <label for="file-input" class="upload-label">
+                あなたの画像を選択　:　
             </label>
-            <input type="file" id="file-input" onchange="previewImage(this)">
+            <input type="file" id="file-input" onchange="previewImage(this)"><br><br>
+            <p class="image-size"> (画像サイズは 100ピクセル×100ピクセル くらいで事前に調整すると綺麗に納まります)</p>
         </div>
         <canvas id="canvas" width="525" height="383"></canvas>
-        <button onclick="downloadImage()">受け取る</button>
+        <button onclick="downloadImage()" class="download-btn">受け取る</button>
     </div>
     <script src="scripts.js"></script>
 </body>
 </html>
+<!--
+    
+    
+    
+　きさま!見ているなッ!
+　
+　　　＜●＞ ＜●＞
+
+
+-->
