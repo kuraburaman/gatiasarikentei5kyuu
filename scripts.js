@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 
 // 黒枠の画像をロード
 const baseImage = new Image();
-baseImage.crossOrigin = 'anonymous';  // この行を追加
+//baseImage.crossOrigin = 'anonymous';  // この行を追加
 baseImage.src = 'gatiasari.png';  // 黒枠の画像のパスを指定してください
 baseImage.onload = function() {
     ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);  // この行を修正
@@ -15,7 +15,7 @@ function previewImage(input) {
         const reader = new FileReader();
         reader.onload = function(e) {
             const uploadedImage = new Image();
-            uploadedImage.crossOrigin = 'anonymous';  // この行を追加
+            //uploadedImage.crossOrigin = 'anonymous';  // この行を追加
             uploadedImage.src = e.target.result;
             uploadedImage.onload = function() {
                 // ここで赤枠の位置とサイズを指定してください
